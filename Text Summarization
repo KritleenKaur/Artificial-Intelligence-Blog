@@ -1,0 +1,95 @@
+#Text Summarization 
+
+The Internet is full of unstructured data in the form of websites, news, social media, documents, and various other media. Faced with an overwhelming amount of data to process, text summarization is a crucial solution to the conundrum of processing data that is growing exponentially. 
+
+Effective text summarization has the potential to reduce the time taken to process large amounts of data or reading time, fit more knowledge in the same space, make the selection of documents go faster, and help people access larger amounts of data. For example, a company can use text summarization to go through significantly more customer feedback files with the same personnel taking the same amount of time.
+
+Multiple techniques for automatic text summarization have been developed to have automatic summarization systems produce coherent summaries of long texts like humans can do. The intended output is a fluent summary covering the main points of the document. 
+
+Long Text Input → Trained Machine Learning Model → Short Summary Output
+
+Various Types of Text Summarization Techniques:
+1. Based on the input type
+   1.1 Single document
+   1.2 Multi-document
+2. Based on the output type
+   2.1 Extractive
+   2.2 Abstractive
+3. Based on the purpose
+   3.1 Generic
+   3.2 Domain-specific 
+   3.3 Query-based
+
+##Extractive Summarization
+
+Extractive summarization techniques generate summaries by pulling key sentences verbatim from the input. The sentences in the summary are a subset of the sentences in the input that could be one or more documents. No new sentences are generated.
+
+The 3 tasks that all text summarization systems perform are:
+1. Form an intermediate representation of the input text that includes all the main points.
+2. Score sentences based on the representation.
+3. Produce a summary containing the k most important sentences from the representation.
+
+###Intermediate Representation
+
+Every summarizer constructs an intermediate representation and proceeds further based on this intermediate representation to create a summary. The representation covers all the important points of the input data.
+
+Types of intermediate representation:
+1. Topic representation - interpreting the topics discussed in the text using:
+- frequency-driven approaches (for example, word probability and TF-IDF) 
+- topic word approaches 
+- latent semantic analysis (LSA)
+- Bayesian topic models — latent Dirichlet allocation (LDA)
+2. Indicator representation - the features of a sentence indicate its importance, like:
+- sentence length
+- sentence position
+- whether sentence contains a particular word 
+- whether sentence contains a particular phrase
+
+Topic word approaches calculate the importance of a sentence either by the number of topics it discusses or by the ratio of the number of topics in that sentence to the number of topics in the text. The former favours longer sentences and the latter favours topic word density.
+
+###Indicator Representation
+
+1. Graph representations:
+   1.1 Sub-graphs represent topics covered in the text.
+   1.2 Isolates important sentences in the text, that are connected to a greater number of other sentences (taking sentences as vertices and sentence similarity represented by edges).
+   1.3 No language-specific processing required.
+   1.4 Enhances summarization performance over simpler frequency approaches.
+2. Machine Learning representations:
+   1.1 The summarization problem is modeled as a classification problem.
+   1.2 Labeled training data is required to build a classifier to classify sentences as summary or non-summary sentences.
+   1.3 Alternatives such as semi-supervised learning are possible.
+   1.4 Certain methods that assume dependency between sentences might give a better result over other techniques.
+
+
+_Sentence Scores_
+
+Every sentence in the intermediate representation is assigned a score that conveys its importance. In topic representation approaches, the score depends on what important points the sentence explains. In indicator representation, the score is based on the features of the sentence, often calculated using machine learning techniques.  
+
+_Summary Sentences Selection_
+
+To generate the summary, the text summarization systems select k most important sentences and put them together to form a summary. The selection can be made using greedy algorithms. One could also proceed with the selection of summary sentences as one does with an optimization problem to maximize coherence and minimize repetition. It is prudent to take into account the context of the summary and the type of input document. 
+
+##Abstractive Summarization
+
+Abstractive summarization systems generate summaries by paraphrasing and shortening the source document. The summary contains new sentences incorporating the main points from the input document. These systems employ Natural Language Processing techniques. Ideally, the output of abstractive summarizers is at par with the output produced by humans.
+
+Comparison between Extractive and Abstractive Summarization 
+
+*Extractive Summarization*
+* Easier to implement in practice.
+* The summary could be grammatically inconsistent.
+* Currently, most procedures being used are extractive.
+
+*Abstractive Summarization*
+* Complicated implementation because of extensive NLP required.
+* The summary tends to be grammatically consistent.
+* Research is ongoing to produce summaries that are abstractive and hence, as human-like as possible.
+
+##Works Cited
+
+Allahyari, M., Pouriyeh, S., Assefi, M., Safaei, S., Trippe, E. D., Gutierrez, J. B., & Kochut, K. (2017). Text summarization techniques: a brief survey. arXiv preprint arXiv:1707.02268.
+https://www.kdnuggets.com/2019/01/approaches-text-summarization-overview.html
+https://towardsdatascience.com/a-quick-introduction-to-text-summarization-in-machine-learning-3d27ccf18a9f
+https://machinelearningmastery.com/gentle-introduction-text-summarization/
+
+
