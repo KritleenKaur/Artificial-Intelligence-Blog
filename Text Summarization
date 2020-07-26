@@ -9,6 +9,7 @@ Multiple techniques for automatic text summarization have been developed to have
 Long Text Input → Trained Machine Learning Model → Short Summary Output
 
 Various Types of Text Summarization Techniques:
+
 1. Based on the input type
    1.1 Single document
    1.2 Multi-document
@@ -25,6 +26,7 @@ Various Types of Text Summarization Techniques:
 Extractive summarization techniques generate summaries by pulling key sentences verbatim from the input. The sentences in the summary are a subset of the sentences in the input that could be one or more documents. No new sentences are generated.
 
 The 3 tasks that all text summarization systems perform are:
+
 1. Form an intermediate representation of the input text that includes all the main points.
 2. Score sentences based on the representation.
 3. Produce a summary containing the k most important sentences from the representation.
@@ -34,6 +36,7 @@ The 3 tasks that all text summarization systems perform are:
 Every summarizer constructs an intermediate representation and proceeds further based on this intermediate representation to create a summary. The representation covers all the important points of the input data.
 
 Types of intermediate representation:
+
 1. Topic representation - interpreting the topics discussed in the text using:
 - frequency-driven approaches (for example, word probability and TF-IDF) 
 - topic word approaches 
@@ -91,5 +94,3 @@ Allahyari, M., Pouriyeh, S., Assefi, M., Safaei, S., Trippe, E. D., Gutierrez, J
 https://www.kdnuggets.com/2019/01/approaches-text-summarization-overview.html
 https://towardsdatascience.com/a-quick-introduction-to-text-summarization-in-machine-learning-3d27ccf18a9f
 https://machinelearningmastery.com/gentle-introduction-text-summarization/
-
-
