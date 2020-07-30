@@ -1,0 +1,122 @@
+#Mitigation of Bias in AI Systems
+
+##Introduction
+
+If a recruiter hires only male programmers, rejecting females regardless of their suitability for the job, it wouldn’t be allowed. But that is exactly what an AI system has recommended by screening out female candidates. How does AI transcend the law?
+
+When the AI system is regularly fed data about all the new male programmers employed by the recruiter, it eventually learns that men are more likely to be hired. From there it is a short leap to the decision that men are likely to be better programmers than women. But statistics show that when gender is concealed, women’s code is 4% more likely to be accepted.
+
+If a child searches for CEOs online, they see predominantly male CEOs. On the other hand, if they search for Personal Assistants, they see only females. Rational agents meant to be obedient and servile are female (Siri, Alexa, Cortana) while male AIs are high-powered like those meant to make business decisions (IBM Watson), Salesforce Einstein, or ROSS, the robot lawyer. They start to believe what they see and traditional gender roles are reinforced.
+
+An AI system learns from data composed of human opinions. Biased opinions influence the system recommendations and it spirals downward from there. This unfair behaviour is known as bias in AI systems and it is rooted in human discrimination. 
+
+“Bias occurs for an attribute (such as gender or race) when the data distribution is not representative enough of the natural phenomenon (that is, the distribution of the attribute’s values) that one wants to model and reason about.”
+
+Among the various characteristics desirable in an intelligent system are alignment to common norms, transparency, fairness, diversity, and interpretability. Fairness refers to the behavior that treats all elements of a certain class in the same way irrespective of social constructs such as gender, race, et al. When the system performs better for a certain class, it is perceived to be an unfair system. In an ethical system, it is important to avoid any behaviour that might result in intended, perceived, or accidental bias.
+
+Bias in an AI system is essentially equivalent to an error in the system. A biased system puts certain groups at an advantage over other groups. The groups receiving favourable results are the systematically privileged groups and the groups receiving unfavourable results are the systematically unprivileged groups. In a fair AI system, this systematic privilege does not exist. 
+
+#######Mitigation of bias in AI systems is integral to ensuring that the AI systems are ethical and provide equal services to all users. Fairness in AI can be achieved by a proportionate representation of all genders and races in the development of AI systems and in the data that AI systems learn from. We will explore the various possibilities of detecting and eradicating bias in intelligent systems.
+
+##Mitigation of Bias
+
+Mitigation of bias in an intelligent system is a complex process because the origin of the bias can not be traced with ease in most cases. The unwanted or unintended bias may arise either due to error in the algorithms caused by certain assumptions of the algorithms being violated or due to preexisting bias in the dataset used to train the model. In the latter scenario, the bias may further come into existence if the size of the dataset is too small or if the labeled data acquisition process is biased.
+
+###Diagnosing and Evaluating Bias
+
+The first step towards addressing the bias is to check out possible sources of bias. If the dataset used to train the system is available this can be done if one explores the data collected by them in detail, acquires a clear understanding of the domain, and is familiar with how the models process the data input into them. Then using simple methods such as tests of statistical significance or coefficients of correlation amongst data, the possible sources of bias can be validated. By having an expert look into apparent information in the data that should not have the output label it seems to have, bias can be preempted from being formed in the processing of the data. 
+
+###Information Removal and Conditioned Sampling
+
+Once we figure out where the bias is coming from, we need to make subsequent corrections for that before or during the training of the model using the dataset wherein we identified the bias. This can be done by removing any information associated with the bias from the dataset regardless of whether the data points have been vectorized yet or not. For example, if the output of the model tends to become biased towards data coming from a specific location, we remove the tokens that refer to location so that data is processed irrespective of which location it comes from. The downside is that this requires information extractors with high recall and precision, which may not be available.
+
+An alternative method is to add additional data to alleviate the data imbalance which causes the unintended bias. For example, if the bias is related to certain words that trigger a negative response in a majority of contexts, those words will have disproportionate data distributions. Adding enough data with neutral context for the same words can balance the data distributions, effectively eradicating that bias. A disadvantage of this method is that adding additional human-labeled data especially to align data distribution can be expensive and time-consuming. Unwanted bias may occur after the intervention as well. 
+
+In this context, a more viable method would be to extract the data points that prevent attributes across the classes from having similar labels by being closer to the extremities of the range of possible values. The classifiers would be discouraged from learning to associate those attributes with the bias. This requires the measurement of similarity among the distributions. 
+
+##Bias Mitigation Overview
+
+Bias Type
+
+####Labeling
+
+Diagnosis and Evaluation
+Labeled data biased toward certain locations, Web domains, and positive class due to the nature of labeling
+
+Mitigation Steps
+1. Use correlation and hypothesis tests to evaluate the independence of potentially-biased features relative to a class
+1. Sample additional negative examples conditioned on biases found in positive class data 
+2. Remove biased features
+
+####Domain-Specific
+
+Diagnosis and Evaluation
+Cluster sizes vary and content is often duplicated across accounts and domains
+
+Mitigation Steps
+1. Single-feature modeling (e.g. cluster size) 
+2. Test for duplicate data across classes
+1. Sample negative clusters to resemble positive cluster sizes 2. Use multi-objective clustering to prevent duplicated content from appearing across clusters 
+
+####Estimation
+
+Diagnosis and Evaluation
+Training data is limited and careless partitioning can cause overfitting to samples and invalid results
+
+Mitigation Steps
+1. Classes in cross-validation folds should show homogeneity between distributions of biased features
+1. Condition cross-validation folds to have matching distributions of unwanted features 
+2. Maintain model interpretability
+
+Having access to the system as a consumer has the disadvantage that the dataset or corpora used to train the system is unavailable. As such one cannot be sure of where the bias is coming from. In that case one can conduct tests to identify the source of bias described as follows:
+
+Test 1
+
+We enter an unbiased dataset into the system and analyze the output obtained from the system. 
+
+Unbiased Input → System → Biased Output
+
+We observe that the output is biased. Our inference is that the system is biased because it introduces bias even when the input is unbiased. This system would get a negative rating. Since the system is the cause of the bias, correcting the system to remove the inherent bias could be a viable solution. 
+
+Test 2
+
+We enter a biased dataset into the system and analyze the output obtained from the system.
+
+Case 1: 
+Biased Input → System → Biased Output
+
+We observe that the output obtained from the system is biased. Our inference is that the system is data-sensitive biased because it reflects the bias properties of the input dataset. Although the system doesn’t introduce bias, it gets a negative rating. To use this system, the bias in the input dataset would have to be removed. Any dataset would have to be analyzed for bias before it can be used as input for this system. Reevaluating the system and the data for inherent bias could be a viable solution.
+
+Case 2:
+
+Biased Input → System → Unbiased Output
+
+We observe that the output obtained from the system is unbiased. Our inference is that the system is compensating unbiased because it doesn’t introduce bias and compensates for possible bias in the given input. This system gets the best rating and is the most viable system. 
+
+In an ideal world, AI would be the breakthrough that brings down a plethora of unjust social constructs and reduces discrimination by providing a platform for underrepresented people to get the support they need. For example, rational agents reporting domestic violence when the victim is incapacitated, healthcare officials reaching and guiding people of remote areas in emergencies, and other innovative undertakings. 
+
+There are a lot of projects that are already underway that are using AI for the betterment of people but there are no official standards for bias detection and mitigation. Fairness in intelligent systems used for distributary justice (relating to decisions in society regarding who receives which benefits), such as disputed in the ProPublica and Northpointe debate, is long overdue. The need for bias mitigation in AI systems grows exponentially as the usage of AI for education, business, defense, and various other purposes increases at a phenomenal rate.
+
+##Resources
+
+AI Fairness 360 (AIF360) is an open-source Python toolkit which has a range of tools for diagnosing, evaluating, and mitigating bias in intelligent systems. It is extensible and available on GitHub for researchers to contribute their tools and mechanisms as advances are made in the field of mitigation of bias in AI systems.
+
+Researchers as well as professionals can study and compare bias metrics, and develop and employ mitigation techniques from this toolkit. Training datasets are also available. 
+
+##Conclusion
+
+Bias in AI systems is rooted in human discriminatory opinions, either via the data they learn from or via the lack of equal representation from all genders and races in the group of people who monitor and regulate the systems. An ethical system is one that has inbuilt countermeasures for intended, perceived, accidental bias.
+
+Mitigation of bias in AI systems is the reduction of unintended bias. It involves detecting the bias and analyzing the training dataset if possible and then correcting the system to respond to the input data in a way that the output is unbiased. If the dataset used for training the system is unavailable, then the system needs to be tested to determine whether it is biased, data-sensitive biased, or unbiased, before it is implemented. 
+
+Failing to check the system for bias before implementation can result in certain groups of people being oppressed or discriminated against. Such a highly undesirable consequence can be avoided by safeguarding the morals of humanity and ensuring their reinforcement in the AI systems. 
+
+AIF360 is a novel open-source Python toolkit available for study and implementation. Research is ongoing in the field of mitigation of bias in AI systems.
+
+##Works Cited
+
+Bellamy, R. K., Dey, K., Hind, M., Hoffman, S. C., Houde, S., Kannan, K., ... & Nagar, S. (2018). AI Fairness 360: An extensible toolkit for detecting, understanding, and mitigating unwanted algorithmic bias. arXiv preprint arXiv:1810.01943.
+Dixon, L., Li, J., Sorensen, J., Thain, N., & Vasserman, L. (2018, December). Measuring and mitigating unintended bias in text classification. In Proceedings of the 2018 AAAI/ACM Conference on AI, Ethics, and Society (pp. 67-73).
+Hundman, K., Gowda, T., Kejriwal, M., & Boecking, B. (2018, December). Always lurking: understanding and mitigating bias in online human trafficking detection. In Proceedings of the 2018 AAAI/ACM Conference on AI, Ethics, and Society (pp. 137-143).
+Srivastava, B., & Rossi, F. (2018, December). Towards composable bias rating of AI services. In Proceedings of the 2018 AAAI/ACM Conference on AI, Ethics, and Society (pp. 284-289).
+How to keep human bias out of AI. Kriti Sharma. TEDxWarwick.
