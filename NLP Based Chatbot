@@ -1,0 +1,55 @@
+#NLP Based Chatbot
+
+Humans interact with each other with much more than words. Discounting body posture and facial expressions, there are other factors that humans take into account during communication such as context, voice modulation, tone, punctuation, sentence structure, sarcasm, abbreviations, slang, idioms, accents, and more. The only way a chatbot can learn such characteristics about unstructured data is via experience. 
+
+Natural Language Processing enables chatbots to process, understand, and imitate human conversation. Instead of processing data as merely symbols or keywords, NLP uses pre-programmed and learned knowledge to find its meaning.
+
+NLP systems use classification models as follows:
+1. Domain classifier
+2. Intent classifier
+3. Entity recognizer
+4. Role classifier
+
+NLP systems are comprised of the following parts:
+1. Dialog System
+2. Natural Language Understanding
+3. Natural Language Generation
+
+###Dialog System
+
+A chatbot has a dialog system to receive information as input and share information as output. The features of a dialog system are:
+- Modality (text-based, speech-based, graphical, or mixed)
+- Device
+- Style (command-based, menu-driven, natural language)
+- Initiative (system, user, or mixed)
+
+###Natural Language Understanding
+
+This is the most important component of any NLP system.
+
+Steps under Natural Language Understanding:
+1. Tokenization: tokens are pieces of text that have some meaning. 
+2. Normalization: to find out spelling mistakes that could change the meaning of the text.
+3. Named Entity Recognition: to identify the person, object, place, or situation under discussion. 
+4. Dependency Parsing: splitting the text into its constituents like nouns, verbs, objects, and common phrases.
+
+###Natural Language Generation
+
+The NLP system produces a human-friendly output because the format is outlined for it using predestined rules or templates. The design used in most cases is narrative or conversational design guided by conditional logic.
+
+The generated sentences have similarity in the following features:
+- Word order
+- Singular or plural
+- Questions
+- Negation
+- Politeness
+
+##Resources
+
+NLTK
+https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e
+
+##Works Cited
+
+https://landbot.io/blog/natural-language-processing-chatbot/
+https://towardsdatascience.com/how-to-build-a-chatbot-a-lesson-in-nlp-d0df588afa4b
