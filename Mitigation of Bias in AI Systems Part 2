@@ -1,0 +1,42 @@
+#Mitigation of Bias in AI Systems
+
+Statistics say that 97% of mobile users are already using AI-powered voice assistants. 40% of people use the voice search function at least once a day. As evident from the above-stated facts AI or Artificial Intelligence is becoming a well-woven strand of the technical aspect of society. But have you thought what that implies? Given the premises of the stated data, researchers have identified unfairness or biases in the latest AI and ML models, and this discovery is becoming a pressing concern. Having said that, what is bias? How and why does it occur? Can it be prevented? If yes, then how?
+
+Since AI is becoming an integral part of society, it should have the same moral and ethical constraints that humans do. Bias means inclination or prejudice for or against one person or a group of people, especially in a way considered to be unfair. Or a lack of fairness. Bias in AI is of broadly 3 categories, intended bias, perceived bias, and unintended/accidental bias. Intended bias is the bias that is fed directly to the AI model. Perceived bias is a result of preconceived notions and prejudices a researcher who is developing the model may hold, for instance: observer bias/experimenter bias and prejudice bias. Unintended biases that are not fed into the system directly, they usually take place due to an incomplete data set. 
+
+Several activities lead to the occurrence of biases in AI models. The bias is directly fed into the model or written into the algorithms. The data set that goes into the model is not diverse enough or does not represent enough of a natural phenomenon or when the data provided plays in favour of one community over others. They can also occur when the teams behind these models are not diverse enough. Furthermore, they can also take place over time once the model is released into the real world, and the AI starts observing, categorizing, and absorbing knowledge from its surroundings: us and society.
+
+Some examples that have been observed in the real world, give a clear picture as to how far a biased AI model affect our day to day life. An AI model engaged in the US judiciary system stated that a black man is twice more likely to re-offend than a white man. In job hiring, women are more likely to be considered for the position of a personal assistant. Men are more likely to be interviewed for the profile of the CEO of the company. AI that sorts and tags comments considers gay, bisexual, queer, transgender, Muslim, and so on as toxic.
+
+##Mitigation Strategies
+
+###1. Rating AI Services 
+
+Before we start working on the actual problem I would suggest we rate or sort the AI services we are using today to identify which ones we need to improve. Here we use a two-step rating approach which gives one out three ratings to any AI service:  UCS – unbiased compensating services, a service of this rating not only gives unbiased output but also compensates for any pre-existing bias in the input, DSBS -data-sensitive bias service, a service with this type of rating produces data depending on the pre-existing bias in the data set provided and BS – biased services, a service with this type of rating is inherently biased.
+
+This system works in two steps. The first time around the system is fed unbiased input dataset and tested against a service. If the output is biased the service is tagged as a biased service as is pretty understandable. The second time around the service is tested against a biased input. If the output is unbiased then the service is tagged UCS, as not only did it give unbiased output but also unbiased output against a biased input set. If it gives out biased output it is tagged as DSBS.
+
+###2. Labeling
+
+We label data biased towards certain web domains, locations, and classes as positive. Then utilizing correlation and hypothesis tests to evaluate the independence of the possibly biased features and sample additional negative examples conditioned on the bias that is found in the positive cases. After the biased features are found we remove them.
+
+###3. Estimation
+
+There is a chance that the training data used may be limited. Its careless partitioning can cause overfitting to samples and invalid results. This can be recognized when classes in cross-validation show homogeneity between biased features. Model interpretability is helpful in such cases.
+
+###4. Unintended Bias Mitigation
+
+To mitigate this type of data it is found that using additional data works. The constraint is that the added data contains all the disproportionate data is in a positive light or that it contains non – toxic examples with the words or phrases that were disproportionately biased.
+
+For example consider this: a comment, I am a gay man, is given an unreasonably high score just because of the presence of the word gay. To solve this, additional data from an unsupervised source (wiki articles) is taken. Given the fact that the data is from an article from a global information website the data is assumed to non- toxic, which is proven by labeling a thousand comments, and 99.5 % of them coming out to be non- toxic. When this unbiased data set is added to a biased data set tends to balance the input. “We found that using unsupervised data, even from a slightly different domain (article versus comment text), is a feasible and effective strategy to mitigate bias."  
+
+###4. Human Morals
+
+We believe the root cause for bias in AI Models comes from our lacking qualities and what we are putting out into society. AI is a learning model; it learns from its surroundings. There is a high chance that even though the model may have started as an unbiased entity, after being implemented it learns and grows to be biased. 
+
+So how do we keep human bias out of AI? How do we stop AI models from making decisions like, “ a black or Latino person is less likely to pay off their loans.” 
+ In a world where AI is making decisions like, “whether or not you get that job interview, how much you pay for your car insurance, how good your credit score is, and even what rating you get in your annual performance review.”  All of this filters through an AI model that has biased assumptions regarding ethnicity, age, and gender instead of their merits, education, and experience. “ We are also reinforcing our biases into how we interact with AI.” 
+
+As quoted before 97% of mobile phone users use AI-powered voice assistants like Siri, Alexa, or Cortana, 40% of them use them at least once a day. All of these have one thing in common - they are obedient and female, whereas male AI-powered voice assistants tend to be more high powered like IBM Watson or ROSS. What is one supposed to infer from this?
+
+Besides working on the bias in AI technology we need to focus on the root cause, human bias, and learn how to combat those.  
