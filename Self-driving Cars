@@ -1,0 +1,25 @@
+#Self-driving Cars
+
+How should we program the self-driving car to act in the event of an unavoidable accident? Should it minimize the loss of life, even if it means sacrificing the occupants, or should it protect the occupants at all costs? Or should it choose between these extremes at random? Who would decide what it should do: the company, the government, or the people?
+
+These ethical questions are important because they could have a substantial impact on whether self-driving cars appeal to the public. It is imperative to set a standard for them before billions of self-driving cars come onto the roads. Who would buy a car programmed to sacrifice the owner? 
+
+Surveys say people are much more inclined towards the scenario where the self-driving car sacrifices its occupants for the greater good. Except when they are the occupants themselves, of course. What should happen when the casualties are children? Do the priorities change? What about inert obstacles or small animals or the elderly? 
+
+Even though self-driving cars can reduce 90% of the accidents caused by human error, anomalies such as the trolley problem or a Catch-22 situation continue to cast a lethal shadow. Who dies in a no-win?
+
+Currently, the way out of this dilemma is to avoid such a situation in the first place. The car should see an entity in its path from a long distance away and observe how that impacts what actions it must now take. If there’s a large vehicle nearby, the car should maintain a safe distance from it. Similarly, it should be extra cautious in the vicinity of two-wheelers, pedestrians, and other vulnerable entities.
+
+When the car reaches a residential area, or a zebra crossing, or nears a school or street market, it should automatically slow down to optimum speeds and stay on high alert. Possibly its progress could be monitored so that in case of a split-second decision, help comes faster.
+
+The car should be programmed in a way enabling it to sense the possibility of a deadlock and slow down or brake or alert those concerned. It would work just fine most of the time. But what about when it doesn’t? At the least, there needs to be a system in place to determine who is responsible.
+
+It is doubtful whether a set of rules could accommodate all possible situations or circumstances. Naturally, the entities involved in and affected by the decisions the car has to make would vary over a wide range of people, animals, and objects, not to mention the legal repercussions. How would the cars learn or be taught to respond to stimuli?
+
+While self-driving cars can be programmed, there are other options like training a model using simulations and real-life decisions made by people driving cars or self-driving cars under testing. The cars learn and mimic real driving through trial and error in simulations; what is the best, fastest, easiest, or safest way to get from one point to another considering various real-world conditions. 
+
+##Works Cited 
+
+Bonnefon, Jean-François, Azim Shariff, and Iyad Rahwan. "The social dilemma of autonomous vehicles." Science 352.6293 (2016): 1573-1576.
+https://www.usatoday.com/story/money/cars/2017/11/23/self-driving-cars-programmed-decide-who-dies-crash/891493001/
+https://www.technologyreview.com/2015/10/22/165469/why-self-driving-cars-must-be-programmed-to-kill/
