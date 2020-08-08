@@ -32,31 +32,5 @@ This particular type of analysis is employed when a company strives to know in w
 
 Multilingual sentiment analysis can be challenging. Not only given the fact that there is the usage of multiple languages but also because data tends to be noisy. Moreover, sometimes the same words in different languages can express various emotions. 
 
-
-##Multilingual Sentiment Analysis Solution
-
-The earlier decade saw a sharp turn of events and increasing utilization of online life arranged by delivering a great deal of people's content. The customers' messages contain high information content like news, enunciation, or data. Thus mining information from customer delivered data is unraveling another field of assessment in Natural Language Processing (NLP) and has been an inconvenient task on account of its unstructured and tumultuous nature. 
-
-Despite the current troubles, much assessment is made on customers' data in the field of information extraction, feeling assessment, event extraction, customer profiling, and more. As shown by the Census of India, there are 22 arranged tongues and more than 100 non-booked lingos in India1. There are 462 million web customers in India2. Besides, a good number of individuals know more than one language. They express their assessments or emotions using more than one language, thus creating another code-mixed/code-traded language. The multilingual customer has a penchant for mixing in two languages while voicing their thoughts in online life. This leads to the formation of another code-mixed language. Recently, various assessments are there on why this code-mixing phenomenon occurs.
-
-The first step towards this form of analysis is to identify the different lingos or languages used in the concerned data set. Several endeavours have been made in the direction of language detection/identification, and several tasks have been performed on several mixed language pairs, English-Spanish, Hindi-English, Mandarin-English, Bengali-English, and more. For better understanding, we will stick to mix-code specific to India.
-
-The second step is to identify POS tags or parts of speech, which means a class of words based on the function of a word, the way it works in a sentence. Sentiment analysis or opinion mining from code-mixed data is one of the problematic endeavours, and the reasons are as follows:
-
-• Generally, code-mixed data is boisterous and requires cleaning and normalization. 
-• It needs a couple of stages, for instance, language recognizing evidence and POS marking. 
-• There is no speculation explaining code-mixed jargon available for any language sets. 
-• The available code-mixed datasets are little in size to play out any independent game plan
-
-The first step towards a dependable accuracy rate is the preparation of a gold standard dataset, and the lack of one is one of the reasons behind the low rates of success for many NLP tasks. For understanding purposes, we take the help of the twitter API to collect our desired dataset. After a collection of code-mixed tweets, some were rejected. 
-
-There are three reasons for which a tweet was rejected. 
-
-• The tweet is incomplete; there is not much information available in the tweet. 
-• The tweet is spam, advertisement, or slang. 
-• The tweet does not have either Bengali or Hindi words.
-
-The hashtags and URLs are kept unaltered. By then, words are typically named with language data utilizing a manual word pool. At last, tweets are tagged with positive, negative, or neutral tags. Missed language names or wrongly clarified language marks are corrected really during manual evaluation.
-
 ##Work Cited
 Choudhary, N., Singh, R., Bindlish, I., & Shrivastava, M. (2018). Sentiment analysis of code-mixed languages leveraging resource rich languages. arXiv preprint arXiv:1804.00806.
